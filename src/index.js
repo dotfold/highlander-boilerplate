@@ -5,7 +5,7 @@ import { AppContainer } from 'react-hot-loader'
 import { createStore, applyMiddleware, compose } from 'redux'
 import Root from './modules/root'
 
-const defaultReducer = (state = {}, action) => {
+const defaultReducer = (state: any = {}, action: any) => {
   return state
 }
 const middleware = []
