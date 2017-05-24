@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "clean": "rimraf dist",
+    "commitmsg": "validate-commit-msg",
     "format": "prettier-standard 'src/**/*.js' && cssbrush src/**/*.less",
     "lint": "standard --plugin flowtype --parser babel-eslint --verbose | snazzy && stylelint 'src/**/*.less'",
     "precommit": "lint-staged",
@@ -73,6 +74,7 @@
     "sw-precache-webpack-plugin": "^0.11.0",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "url-loader": "^0.5.8",
+    "validate-commit-msg": "^2.12.1",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
