@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react", "standard-flow", "plugin:flowtype/recommended"],
+  "plugins": [
+    "flowtype",
+    "import"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "import/first": 0,
+    "import/order": 1,
+    "import/no-webpack-loader-syntax": 0
+  }
+}

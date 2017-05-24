@@ -1,0 +1,30 @@
+{
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-runtime",
+    "transform-flow-strip-types",
+    "transform-class-properties"
+  ],
+  "presets": [
+    [
+      "env", {
+        "targets": {
+          "chrome": 52,
+          "browsers": ["last 2 versions", "safari 7"]
+        },
+        "modules": false,
+        "loose": true
+      }
+    ],
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  }
+}

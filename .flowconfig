@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/node_modules/enzyme-matchers/.*
+.*/node_modules/jest-enzyme/.*
+.*/node_modules/react-event-listener/.*
+.*/node_modules/react-motion/.*
+.*/node_modules/config-chain/.*
+
+[include]
+
+[libs]
+flowtypes/
+
+[options]
+module.file_ext=.less
