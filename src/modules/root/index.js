@@ -22,14 +22,7 @@ const Layout = ({ component: Component, ...rest }: LayoutComponentProps) => {
   )
 }
 
-const c = () => {
-  const d = '2'
-  console.log(d)
-}
-
-const Home = () => (
-  <div styleName='welcome-home' onClick={() => c()}>Welcome Home</div>
-)
+const Home = () => <div styleName='welcome-home'>Welcome Home</div>
 
 export default function Root ({ store }: { store: any }) {
   return (
