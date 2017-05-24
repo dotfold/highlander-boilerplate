@@ -108,6 +108,12 @@
       "dist/",
       "flow-typed/",
       "flow-libs/"
+    ],
+    "globals": [
+      "jest",
+      "describe",
+      "it",
+      "expect"
     ]
   },
   "config": {
