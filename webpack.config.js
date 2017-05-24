@@ -54,7 +54,7 @@ module.exports = function (env) {
 
     new webpack.DefinePlugin(clientEnv.stringified),
 
-    new ExtractTextPlugin('style-[contenthash:8].css'),
+    new ExtractTextPlugin('static/css/style-[contenthash:8].css'),
 
     new HtmlWebpackPlugin({
       template: paths.appHtml,
@@ -103,7 +103,6 @@ module.exports = function (env) {
       new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
         chunks: [ 'app' ],
-        async: true,
         minChunks: function (module) {
           return _isVendor(module)
         },
@@ -205,8 +204,8 @@ module.exports = function (env) {
       path: paths.appBuild,
       pathinfo: true,
       publicPath: '/',
-      filename: '[name]-[hash:8].js',
-      chunkFilename: '[name]-[chunkhash:8].js'
+      filename: 'static/js/[name]-[hash:8].js',
+      chunkFilename: 'static/js/[name]-[chunkhash:8].js'
     },
     module: {
       rules: [
