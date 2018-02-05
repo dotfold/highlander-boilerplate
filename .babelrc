@@ -1,9 +1,7 @@
 {
   "plugins": [
     "syntax-dynamic-import",
-    "transform-runtime",
-    "transform-flow-strip-types",
-    "transform-class-properties"
+    "transform-runtime"
   ],
   "presets": [
     [
@@ -16,9 +14,8 @@
         "loose": true
       }
     ],
-    "es2015",
-    "stage-0",
-    "react"
+    "react",
+    "stage-0"
   ],
   "env": {
     "development": {
