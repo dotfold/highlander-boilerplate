@@ -246,6 +246,7 @@ module.exports = function (env) {
             loader: 'babel-loader',
             query: {
               plugins: [
+                'react-hot-loader/babel',
                 'transform-react-jsx',
                 [
                   'react-css-modules',
@@ -253,7 +254,9 @@ module.exports = function (env) {
                     context: sourcePath,
                     webpackHotModuleReloading: true,
                     'filetypes': {
-                      '.less': 'postcss-less'
+                      '.less': {
+                        'syntax': 'postcss-less'
+                      }
                     }
                   }
                 ]
